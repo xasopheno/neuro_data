@@ -10,7 +10,9 @@ import matplotlib.pyplot
 pd.set_option('display.max_columns', 20)
 pd.set_option('display.max_rows', 20)
 
-raw = mne.io.read_raw_fif("ds003703-download/sub-aoiyzwiy/meg/sub-aoiyzwiy_task-rest_run-01_meg.fif")
+subject = "f1exphe7"
+
+raw = mne.io.read_raw_fif(f"ds003703-download/sub-{subject}/meg/sub-{subject}_task-rest_run-01_meg.fif")
 print(raw)
 print(raw.info)
 
